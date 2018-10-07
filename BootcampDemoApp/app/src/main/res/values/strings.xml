@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BootcampDemoApp</string>
+    <string name="local_notification">LOCAL NOTIFICATION</string>
+    <string name="send_notification">Send Notification</string>
+    <string name="description_of_notification">Description of notification</string>
+    <string name="channel_name">channel_name</string>
+    <string name="channel_description">channel_description</string>
 </resources>

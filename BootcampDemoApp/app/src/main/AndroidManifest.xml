@@ -10,17 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".alarmmanager.AlarmManagerExampleMainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
         </activity>
 
         <receiver
             android:name=".alarmmanager.AlarmManagerBroadcastReceiver"
             android:enabled="true"
             android:exported="true" />
+
+        <activity android:name=".localnotification.LocalNotificationExampleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".localnotification.LocalNotificationDisplayActivity" />
     </application>
 
 </manifest>
