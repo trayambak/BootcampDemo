@@ -26,19 +26,19 @@
             android:exported="true" />
 
         <activity android:name=".localnotification.LocalNotificationExampleActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".localnotification.LocalNotificationDisplayActivity" />
+        <activity android:name=".jobscheduler.JobSchedulerExampleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".localnotification.LocalNotificationDisplayActivity" />
-        <activity android:name=".jobscheduler.JobSchedulerExampleActivity">
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
         </activity>
 
         <service
