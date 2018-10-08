@@ -9,6 +9,12 @@ public class MyJobService extends JobService {
     private static final String TAG = MyJobService.class.getSimpleName();
     private boolean mJobCancelled = false;
 
+    /**
+     * return true if you have to make some background operation
+     *
+     * @param params need to pass job params to stop job
+     * @return
+     */
     @Override
     public boolean onStartJob(JobParameters params) {
         Log.d(TAG, "Job started");

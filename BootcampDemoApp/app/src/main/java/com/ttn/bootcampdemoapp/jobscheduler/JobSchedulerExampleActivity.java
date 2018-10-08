@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.ttn.bootcampdemoapp.Constants;
 import com.ttn.bootcampdemoapp.R;
 
 import butterknife.BindView;
@@ -32,7 +33,7 @@ public class JobSchedulerExampleActivity extends AppCompatActivity {
 
     public void scheduleJob() {
         ComponentName componentName = new ComponentName(this, MyJobService.class);
-        JobInfo info = new JobInfo.Builder(123, componentName)
+        JobInfo info = new JobInfo.Builder(Constants.JOB_ID, componentName)
                 .setRequiresCharging(true)
                 .setRequiredNetworkType(JobInfo.NETWORK_TYPE_UNMETERED)
                 .setPersisted(true)
@@ -50,7 +51,7 @@ public class JobSchedulerExampleActivity extends AppCompatActivity {
 
     public void cancelJob() {
         JobScheduler scheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
-        scheduler.cancel(123);
+        scheduler.cancel(Constants.JOB_ID);
         Log.d(TAG, "Job cancelled");
     }
 
