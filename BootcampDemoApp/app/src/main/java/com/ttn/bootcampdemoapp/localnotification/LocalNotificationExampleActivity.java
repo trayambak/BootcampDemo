@@ -64,7 +64,7 @@ public class LocalNotificationExampleActivity extends AppCompatActivity {
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
 
         // notificationId is a unique int for each notification that you must
-        // define Remember to save the notification ID that you pass to NotificationManagerCompat.notify()
+        // define, Remember to save the notification ID that you pass to NotificationManagerCompat.notify()
         // because you'll need it later if you want to update or remove the notification.
         notificationManager.notify(NOTIFICATION_ID, builder.build());
     }
